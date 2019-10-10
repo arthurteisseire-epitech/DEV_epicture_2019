@@ -8,7 +8,7 @@ import {
 export default class Login extends Component {
     constructor(props) {
         super(props);
-        this.state = {text: ''}
+        this.state = {text: ''};
     }
 
     render() {
@@ -17,7 +17,7 @@ export default class Login extends Component {
                 <TextInput
                     style={{height: 40}}
                     placeholder="Enter your login"
-                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={(t) => this.setState({text: t.nativeEvent.text})}
                 />
                 <Text style={{padding: 10, fontSize: 25}}>
                     {"Your name : " + this.state.text}
