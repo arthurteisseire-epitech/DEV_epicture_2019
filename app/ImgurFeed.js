@@ -32,9 +32,9 @@ export default class ImgurFeed extends Component {
     }
 
     getImagesFromSources() {
-        const images = this.state.jsonPosts.map((dataSource) => {
-            if (dataSource.images !== undefined && dataSource.images[0].link.match(/\.(jpg|png|gif)/g))
-                return dataSource.images[0];
+        const images = this.state.jsonPosts.map((jsonPost) => {
+            if (jsonPost.images !== undefined && jsonPost.images[0].link.match(/\.(jpg|png|gif)/g))
+                return jsonPost.images[0];
             else
                 return null;
         });
