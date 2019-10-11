@@ -1,16 +1,8 @@
 import React, {Component} from 'react'
-import {Image, Text, View, ScrollView, FlatList} from 'react-native'
+import {Text, View, FlatList} from 'react-native'
 import API from './api'
+import ImgurPost from "./ImgurPost";
 
-
-function Item({ image }) {
-    return (
-        <View>
-            <Image style={{width: 300, height: 300}} source={{uri: image.link}}/>
-            <Text> {image.description} </Text>
-        </View>
-    );
-}
 
 export default class ImgurFeed extends Component {
     constructor(props) {
@@ -31,18 +23,6 @@ export default class ImgurFeed extends Component {
         });
     }
 
-    getImagesFromSources() {
-        const images = this.state.jsonPosts.map((jsonPost) => {
-            if (jsonPost.images !== undefined && jsonPost.images[0].link.match(/\.(jpg|png|gif)/g))
-                return jsonPost.images[0];
-            else
-                return null;
-        });
-        return images.filter((image) => {
-            return image != null;
-        })
-    }
-
     updateImages() {
         if (this.state.loading) {
             this.state.images = (
@@ -54,8 +34,8 @@ export default class ImgurFeed extends Component {
         if (!this.state.loading) {
             this.state.images = (
                 <FlatList
-                    data={this.getImagesFromSources()}
-                    renderItem={({item}) => <Item image={item}/>}
+                    data={this.state.jsonPosts}
+                    renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
                 />
             )
         }

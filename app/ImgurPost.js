@@ -2,13 +2,21 @@ import React, {Component} from 'react'
 import {Image, Text, View} from 'react-native'
 
 export default class ImgurPost extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    displayImageIfExist(jsonData) {
+        if (jsonData.images !== undefined)
+            return <Image style={{width: 300, height: 300}} source={{uri: this.props.jsonData.images[0].link}}/>;
+        return null;
+    }
+
     render() {
         return (
             <View>
-                <View>
-                    <Image style={{width: 300, height: 300}} source={{uri: image.link}}/>
-                    <Text> {image.description} </Text>
-                </View>
+                <Text> {this.props.jsonData.title} </Text>
+                {this.displayImageIfExist(this.props.jsonData)}
             </View>
         )
     }
