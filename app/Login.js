@@ -15,7 +15,6 @@ export default class Login extends Component {
 
     ValidLogin() {
         return true;
-        return this.state.login === "toto" && this.state.password === "tata";
     }
 
     render() {
