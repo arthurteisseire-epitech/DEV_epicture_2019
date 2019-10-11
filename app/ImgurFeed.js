@@ -3,18 +3,20 @@ import {Image, Text, View, ScrollView, FlatList} from 'react-native'
 import API from './api'
 
 
-function Item({ title }) {
+function Item({ image }) {
     return (
         <View>
-            <Image style={{width: 50, height: 50}} source={{uri: title}}/>
+            <Image style={{width: 300, height: 300}} source={{uri: image.link}}/>
+            <Text> {image.description} </Text>
         </View>
     );
 }
+
 export default class ImgurFeed extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dataSources: [],
+            posts: [],
             loading: true,
             images: []
         };
@@ -22,17 +24,15 @@ export default class ImgurFeed extends Component {
 
     componentDidMount() {
         API.get("cats").then((response) => {
-            this.setState({dataSources: response.data.items});
+            this.setState({posts: response.data.items});
             this.setState({loading: false});
         }, (error) => {
             console.log(error);
         });
-
     }
 
-
     getImagesFromSources() {
-        var images = this.state.dataSources.map((dataSource) => {
+        const images = this.state.posts.map((dataSource) => {
             if (dataSource.images !== undefined && dataSource.images[0].link.match(/\.(jpg|png|gif)/g))
                 return dataSource.images[0];
             else
@@ -55,7 +55,7 @@ export default class ImgurFeed extends Component {
             this.state.images = (
                 <FlatList
                     data={this.getImagesFromSources()}
-                    renderItem={({item}) => <Item title={item.link}/>}
+                    renderItem={({item}) => <Item image={item}/>}
                 />
             )
         }
