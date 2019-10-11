@@ -22,7 +22,7 @@ export default class ImgurFeed extends Component {
 
     }
 
-    render() {
+    updateImages() {
         if (this.state.loading) {
             this.state.images = (
                 <View>
@@ -39,6 +39,10 @@ export default class ImgurFeed extends Component {
                 </View>
             )
         }
+    }
+
+    render() {
+        this.updateImages();
         return (
             <View>
                 {this.state.images}
