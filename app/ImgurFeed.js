@@ -16,7 +16,7 @@ export default class ImgurFeed extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            posts: [],
+            jsonPosts: [],
             loading: true,
             images: []
         };
@@ -24,7 +24,7 @@ export default class ImgurFeed extends Component {
 
     componentDidMount() {
         API.get("cats").then((response) => {
-            this.setState({posts: response.data.items});
+            this.setState({jsonPosts: response.data.items});
             this.setState({loading: false});
         }, (error) => {
             console.log(error);
@@ -32,7 +32,7 @@ export default class ImgurFeed extends Component {
     }
 
     getImagesFromSources() {
-        const images = this.state.posts.map((dataSource) => {
+        const images = this.state.jsonPosts.map((dataSource) => {
             if (dataSource.images !== undefined && dataSource.images[0].link.match(/\.(jpg|png|gif)/g))
                 return dataSource.images[0];
             else
