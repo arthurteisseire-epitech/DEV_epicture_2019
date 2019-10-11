@@ -1,7 +1,15 @@
 import React, {Component} from 'react'
-import {Image, Text, View, ScrollView} from 'react-native'
+import {Image, Text, View, ScrollView, FlatList} from 'react-native'
 import API from './api'
 
+
+function Item({ title }) {
+    return (
+        <View>
+            <Image style={{width: 50, height: 50}} source={{uri: title}}/>
+        </View>
+    );
+}
 export default class ImgurFeed extends Component {
     constructor(props) {
         super(props);
@@ -22,16 +30,11 @@ export default class ImgurFeed extends Component {
 
     }
 
-    getImage(image) {
-        return <Image
-            style={{width: 200, height: 200}}
-            source={{uri: image.link}}/>
-    }
 
-    getImagesFromSources(func) {
+    getImagesFromSources() {
         var images = this.state.dataSources.map((dataSource) => {
             if (dataSource.images !== undefined && dataSource.images[0].link.match(/\.(jpg|png|gif)/g))
-                return func(dataSource.images[0]);
+                return dataSource.images[0];
             else
                 return null;
         });
@@ -50,9 +53,10 @@ export default class ImgurFeed extends Component {
         }
         if (!this.state.loading) {
             this.state.images = (
-                <ScrollView>
-                    {this.getImagesFromSources(this.getImage)}
-                </ScrollView>
+                <FlatList
+                    data={this.getImagesFromSources()}
+                    renderItem={({item}) => <Item title={item.link}/>}
+                />
             )
         }
     }
