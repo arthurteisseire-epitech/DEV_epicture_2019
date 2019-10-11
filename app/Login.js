@@ -3,7 +3,7 @@ import {
     View,
     Text,
     TextInput,
-    Button,
+    Button, Image,
 } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 
@@ -14,6 +14,7 @@ export default class Login extends Component {
     }
 
     ValidLogin() {
+        return true;
         return this.state.login === "toto" && this.state.password === "tata";
     }
 
@@ -36,7 +37,7 @@ export default class Login extends Component {
                 <Text style={{padding: 10, fontSize: 25}}>
                     {"Your password : " + this.state.password}
                 </Text>
-                <Button title={"Submit"} onPress={this.ValidLogin() ? Actions.flex : null}/>
+                <Button title={"Submit"} onPress={this.ValidLogin() ? Actions.feed : null}/>
             </View>
         )
     }
