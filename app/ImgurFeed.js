@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Image, Text, View} from 'react-native'
+import {Image, Text, View, ScrollView} from 'react-native'
 import API from './api'
 
 export default class ImgurFeed extends Component {
@@ -22,6 +22,24 @@ export default class ImgurFeed extends Component {
 
     }
 
+    getImage(image) {
+        return <Image
+            style={{width: 200, height: 200}}
+            source={{uri: image.link}}/>
+    }
+
+    getImagesFromSources(func) {
+        var images = this.state.dataSources.map((dataSource) => {
+            if (dataSource.images !== undefined && dataSource.images[0].link.match(/\.(jpg|png|gif)/g))
+                return func(dataSource.images[0]);
+            else
+                return null;
+        });
+        return images.filter((image) => {
+            return image != null;
+        })
+    }
+
     updateImages() {
         if (this.state.loading) {
             this.state.images = (
@@ -32,11 +50,9 @@ export default class ImgurFeed extends Component {
         }
         if (!this.state.loading) {
             this.state.images = (
-                <View>
-                    <Image
-                        style={{width: 200, height: 200}}
-                        source={{uri: this.state.dataSources[4].images[0].link}}/>
-                </View>
+                <ScrollView>
+                    {this.getImagesFromSources(this.getImage)}
+                </ScrollView>
             )
         }
     }
