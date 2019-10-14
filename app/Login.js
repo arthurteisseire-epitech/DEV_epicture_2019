@@ -30,7 +30,6 @@ export default class Login extends Component {
                 access_token: params.access_token,
             }, this.setState({loading: true}));
         }
-        console.log(this.state);
     }
 
     render() {
