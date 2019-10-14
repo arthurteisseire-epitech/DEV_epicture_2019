@@ -16,7 +16,6 @@ export default class ImgurFeed extends Component {
     }
 
     componentDidMount() {
-        console.log(this.state.feedName);
         API.get(this.state.feedName).then((response) => {
             this.setState({jsonPosts: response.data.items});
             this.setState({loading: false});
