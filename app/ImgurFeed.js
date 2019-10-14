@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Text, View, FlatList} from 'react-native'
+import {Text, View, FlatList, TextInput} from 'react-native'
 import API from './api'
 import ImgurPost from "./ImgurPost";
 
@@ -10,12 +10,14 @@ export default class ImgurFeed extends Component {
         this.state = {
             jsonPosts: [],
             loading: true,
-            images: []
+            images: [],
+            feedName: "cats"
         };
     }
 
     componentDidMount() {
-        API.get("cats").then((response) => {
+        console.log(this.state.feedName);
+        API.get(this.state.feedName).then((response) => {
             this.setState({jsonPosts: response.data.items});
             this.setState({loading: false});
         }, (error) => {
@@ -41,10 +43,20 @@ export default class ImgurFeed extends Component {
         }
     }
 
+    updateFeed(feedName) {
+        this.setState({loading: true});
+        this.setState({feedName: feedName}, () => this.componentDidMount());
+    }
+
     render() {
         this.updateImages();
         return (
             <View>
+                <TextInput
+                    style={{height: 40}}
+                    placeholder="Look for a feed !"
+                    onSubmitEditing={(t) => this.updateFeed(t.nativeEvent.text)}
+                />
                 {this.state.images}
             </View>
         )
