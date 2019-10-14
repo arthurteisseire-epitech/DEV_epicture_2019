@@ -1,11 +1,5 @@
 import React, {Component} from 'react'
-import {
-    View,
-    Text,
-    TextInput,
-    Button, Image,
-} from 'react-native'
-import { Actions } from 'react-native-router-flux'
+import {WebView} from 'react-native-webview';
 
 export default class Login extends Component {
     constructor(props) {
@@ -13,31 +7,13 @@ export default class Login extends Component {
         this.state = {login: '', password: ''};
     }
 
-    ValidLogin() {
-        return true;
-    }
-
     render() {
         return (
-            <View style={{padding: 10}}>
-                <TextInput
-                    style={{height: 40}}
-                    placeholder="Enter your login"
-                    onSubmitEditing={(t) => this.setState({login: t.nativeEvent.text})}
-                />
-                <TextInput
-                    style={{height: 40}}
-                    placeholder="Enter your password"
-                    onSubmitEditing={(t) => this.setState({password: t.nativeEvent.text})}
-                />
-                <Text style={{padding: 10, fontSize: 25}}>
-                    {"Your name : " + this.state.login}
-                </Text>
-                <Text style={{padding: 10, fontSize: 25}}>
-                    {"Your password : " + this.state.password}
-                </Text>
-                <Button title={"Submit"} onPress={this.ValidLogin() ? Actions.feed : null}/>
-            </View>
+            <WebView
+                source={{uri: 'https://api.imgur.com/oauth2/authorize?client_id=a34ccf491aadd2c&response_type=token&state=toto'}}
+                style={{marginTop: 20}}
+                onMessage={(event) => console.log(event.nativeEvent.data.url)}
+            />
         )
     }
 }

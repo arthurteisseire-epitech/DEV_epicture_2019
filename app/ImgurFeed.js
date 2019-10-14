@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import {Text, View, FlatList, TextInput} from 'react-native'
-import API from './api'
+import ImgurApi from "./ImgurApi";
 import ImgurPost from "./ImgurPost";
 
 
 export default class ImgurFeed extends Component {
     constructor(props) {
         super(props);
+        this.api = new ImgurApi;
         this.state = {
             jsonPosts: [],
             loading: true,
@@ -16,7 +17,7 @@ export default class ImgurFeed extends Component {
     }
 
     componentDidMount() {
-        API.get(this.state.feedName).then((response) => {
+        this.api.get(this.state.feedName).then((response) => {
             this.setState({jsonPosts: response.data.items});
             this.setState({loading: false});
         }, (error) => {
