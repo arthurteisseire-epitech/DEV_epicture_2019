@@ -11,8 +11,8 @@ export default class App extends Component {
             <View style={{flex: 1}}>
                 <Router>
                     <Stack key="root">
-                        <Scene key="feed" component={ImgurFeed} title="henry"/>
                         <Scene key="login" component={Login} title="Login"/>
+                        <Scene key="feed" component={ImgurFeed} title="henry"/>
                         <Scene key="home" component={ButtonTest}/>
                     </Stack>
                 </Router>
