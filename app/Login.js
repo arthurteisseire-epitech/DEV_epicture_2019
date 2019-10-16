@@ -7,10 +7,6 @@ export default class Login extends Component {
         super(props);
         this.state = {
             url: '',
-            account_id: 0,
-            account_username: '',
-            refresh_token: '',
-            access_token: '',
             loading: true
         };
     }
