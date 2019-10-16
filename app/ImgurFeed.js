@@ -18,8 +18,10 @@ export default class ImgurFeed extends Component {
 
     componentDidMount() {
         this.api.get(this.state.feedName).then((response) => {
-            this.setState({jsonPosts: response.data.items});
-            this.setState({loading: false});
+            this.setState({
+                jsonPosts: response.data.items,
+                loading: false
+            });
         }, (error) => {
             console.log(error);
         });
