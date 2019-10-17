@@ -14,7 +14,7 @@ export default class ImgurPost extends Component {
 
     render() {
         return (
-            <View>
+            <View style={{flex: 1, backgroundColor: "#226B74", padding: 10}}>
                 <Text> {this.props.jsonData.title} </Text>
                 {this.displayImageIfExist(this.props.jsonData)}
             </View>
