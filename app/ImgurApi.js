@@ -55,5 +55,22 @@ export default class ImgurApi {
             });
         });
     }
-    // TODO up/down vote, image de profile
+
+    getAvatar() {
+        return Session.get().then((session) => {
+            return axios({
+                method: 'GET',
+                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorite',
+                headers: {
+                    'Authorization': 'Bearer ' + JSON.parse(session).access_token
+                }
+            }).then((response) => {
+                return response.data;
+            }).catch((error) => {
+                console.log('error : ' + error);
+            });
+        });
+    }
+
+    // TODO up/down vote
 }
