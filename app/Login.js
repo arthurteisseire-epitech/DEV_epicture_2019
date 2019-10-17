@@ -33,7 +33,7 @@ export default class Login extends Component {
             console.log(e);
         }
         if ('access_token' in params)
-            Actions.feed();
+            Actions.upload();
     }
 
     parseUrl(url) {
