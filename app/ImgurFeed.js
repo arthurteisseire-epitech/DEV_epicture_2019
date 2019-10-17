@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
-import {Text, View, FlatList, TextInput} from 'react-native'
+import {Text, View, FlatList, TextInput, StyleSheet} from 'react-native'
 import ImgurApi from "./ImgurApi";
 import ImgurPost from "./ImgurPost";
 import Session from "./Session";
-
 
 export default class ImgurFeed extends Component {
     constructor(props) {
@@ -21,7 +20,7 @@ export default class ImgurFeed extends Component {
         return (
             <View>
                 <TextInput
-                    style={{height: 40}}
+                    style={styles.FeedSearchBar}
                     placeholder="Look for a feed !"
                     onSubmitEditing={(t) => this.setState({feedName: t.nativeEvent.text, loading: true})}
                 />
@@ -49,13 +48,14 @@ export default class ImgurFeed extends Component {
     updateImages() {
         if (this.state.loading) {
             this.state.images = (
-                <View>
+                <View style={styles.FeedStyle}>
                     <Text>Loading images…</Text>
                 </View>
             )
         } else {
             this.state.images = (
                 <FlatList
+                    style = {styles.FeedStyle}
                     data={this.state.jsonPosts}
                     renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
                 />
@@ -64,3 +64,12 @@ export default class ImgurFeed extends Component {
         }
     }
 };
+
+const styles = StyleSheet.create({
+    FeedStyle: {
+        backgroundColor: '#003247',
+    },
+    FeedSearchBar: {
+        backgroundColor: '#FFFFB8',
+    },
+});
