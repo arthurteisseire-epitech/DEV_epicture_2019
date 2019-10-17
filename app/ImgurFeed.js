@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Text, View, FlatList, TextInput} from 'react-native'
 import ImgurApi from "./ImgurApi";
 import ImgurPost from "./ImgurPost";
+import Session from "./Session";
 
 
 export default class ImgurFeed extends Component {
@@ -12,19 +13,37 @@ export default class ImgurFeed extends Component {
             jsonPosts: [],
             loading: true,
             images: [],
-            feedName: "cats"
+            feedName: ''
         };
     }
 
-    componentDidMount() {
-        this.api.get(this.state.feedName).then((response) => {
-            this.setState({
-                jsonPosts: response.data.items,
-                loading: false
+    render() {
+        return (
+            <View>
+                <TextInput
+                    style={{height: 40}}
+                    placeholder="Look for a feed !"
+                    onSubmitEditing={(t) => this.setState({feedName: t.nativeEvent.text, loading: true})}
+                />
+                {this.state.images}
+            </View>
+        )
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevState.feedName !== this.state.feedName) {
+            // Session.get().then((session) => console.log(session));
+            this.api.get(this.state.feedName).then((response) => {
+                this.setState({
+                    jsonPosts: response.data.items,
+                    loading: false
+                });
+            }, (error) => {
+                console.log(error);
             });
-        }, (error) => {
-            console.log(error);
-        });
+        }
+        if (prevState.loading !== this.state.loading)
+            this.updateImages();
     }
 
     updateImages() {
@@ -34,33 +53,14 @@ export default class ImgurFeed extends Component {
                     <Text>Loading images…</Text>
                 </View>
             )
-        }
-        if (!this.state.loading) {
+        } else {
             this.state.images = (
                 <FlatList
                     data={this.state.jsonPosts}
                     renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
                 />
-            )
+            );
+            this.setState({loading: false});
         }
-    }
-
-    updateFeed(feedName) {
-        this.setState({loading: true});
-        this.setState({feedName: feedName}, () => this.componentDidMount());
-    }
-
-    render() {
-        this.updateImages();
-        return (
-            <View>
-                <TextInput
-                    style={{height: 40}}
-                    placeholder="Look for a feed !"
-                    onSubmitEditing={(t) => this.updateFeed(t.nativeEvent.text)}
-                />
-                {this.state.images}
-            </View>
-        )
     }
 };

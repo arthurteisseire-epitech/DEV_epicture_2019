@@ -1,14 +1,12 @@
 import React, {Component} from 'react'
 import {WebView} from 'react-native-webview';
 import Session from './Session'
+import {Actions} from 'react-native-router-flux';
 
 export default class Login extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            url: '',
-            loading: true
-        };
+        this.state = {url: ''};
     }
 
     render() {
@@ -16,10 +14,7 @@ export default class Login extends Component {
             <WebView
                 source={{uri: 'https://api.imgur.com/oauth2/authorize?client_id=a34ccf491aadd2c&response_type=token&state=callback'}}
                 onNavigationStateChange={(navEvent) => {
-                    this.setState({
-                        url: navEvent.url,
-                        loading: false
-                    });
+                    this.setState({url: navEvent.url});
                 }}
             />
         )
@@ -27,23 +22,22 @@ export default class Login extends Component {
 
     async componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevState.url !== this.state.url)
-            await this.updateUserData();
+            await this.checkConnection();
     }
 
-    async updateUserData() {
-        if (!this.state.loading) {
-            const params = this.parseUrl(this.state.url);
-            try {
-                await Session.store(JSON.stringify(params));
-            } catch (e) {
-                console.log(e);
-            }
+    async checkConnection() {
+        const params = this.parseUrl(this.state.url);
+        try {
+            await Session.store(JSON.stringify(params));
+        } catch (e) {
+            console.log(e);
         }
-        Session.get().then((session) => console.log(session));
+        if ('access_token' in params)
+            Actions.feed();
     }
 
     parseUrl(url) {
-        const regex = /[?&]([^=#]+)=([^&#]*)/g;
+        const regex = /[?&#]([^=#]+)=([^&#]*)/g;
         let params = {};
         let match = regex.exec(url);
         while (match) {
