@@ -56,6 +56,22 @@ export default class ImgurApi {
         });
     }
 
+    getFavoritesOnPage(page) {
+        return Session.get().then((session) => {
+            return axios({
+                method: 'GET',
+                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorites/' + page + '/newest',
+                headers: {
+                    'Authorization': 'Bearer ' + JSON.parse(session).access_token
+                }
+            }).then((response) => {
+                return response.data;
+            }).catch((error) => {
+                console.log('error : ' + error);
+            });
+        });
+    }
+
     getAvatar() {
         return Session.get().then((session) => {
             return axios({
