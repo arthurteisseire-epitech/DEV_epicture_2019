@@ -34,7 +34,7 @@ export default class Login extends Component {
         }
         if ('access_token' in params && !this.state.isLoaded) {
             this.setState({isLoaded: true});
-            Actions.upload();
+            Actions.replace('feed');
         }
     }
 

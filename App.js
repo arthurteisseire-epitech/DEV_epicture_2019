@@ -12,8 +12,8 @@ export default class App extends Component {
                 <Router>
                     <Stack key="root">
                         <Scene key="login" component={Login} title="Login"/>
-                        <Scene key="upload" component={Upload} title="Upload"/>
                         <Scene key="feed" component={ImgurFeed} title="Feed"/>
+                        <Scene key="upload" component={Upload} title="Upload"/>
                     </Stack>
                 </Router>
             </View>
