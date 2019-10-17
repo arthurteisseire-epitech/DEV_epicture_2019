@@ -38,4 +38,6 @@ export default class ImgurApi {
             });
         });
     }
+
+    // TODO Favoris, up/down vote, image de profile
 }
