@@ -11,7 +11,7 @@ export default class App extends Component {
                 <Router>
                     <Stack key="root">
                         <Scene key="login" component={Login} title="Login"/>
-                        <Scene key="feed" component={ImgurFeed} title="henry"/>
+                        <Scene key="feed" component={ImgurFeed} title="Feed"/>
                     </Stack>
                 </Router>
             </View>
