@@ -6,7 +6,7 @@ import {Actions} from 'react-native-router-flux';
 export default class Login extends Component {
     constructor(props) {
         super(props);
-        this.state = {url: ''};
+        this.state = {url: '', isLoaded: false};
     }
 
     render() {
@@ -32,8 +32,10 @@ export default class Login extends Component {
         } catch (e) {
             console.log(e);
         }
-        if ('access_token' in params)
-            Actions.upload();
+        if ('access_token' in params && !this.state.isLoaded) {
+            this.setState({isLoaded: true});
+            Actions.replace('upload');
+        }
     }
 
     parseUrl(url) {
