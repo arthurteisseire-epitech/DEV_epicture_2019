@@ -3,15 +3,6 @@ import {View, Button, Image, Text} from 'react-native'
 import ImagePicker from 'react-native-image-picker'
 import ImgurApi from "./ImgurApi";
 
-const options = {
-    title: 'Select Avatar',
-    customButtons: [{name: 'fb', title: 'Choose Photo from Facebook'}],
-    storageOptions: {
-        skipBackup: true,
-        path: 'images',
-    },
-};
-
 export default class Upload extends Component {
     constructor(props) {
         super(props);
@@ -38,7 +29,7 @@ export default class Upload extends Component {
     }
 
     takePhoto() {
-        ImagePicker.launchCamera(options, (response) => {
+        ImagePicker.launchCamera({}, (response) => {
             this.setState({img: response});
             console.log('response: ' + JSON.stringify(response));
         });
