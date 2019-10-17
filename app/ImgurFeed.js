@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Text, View, FlatList, TextInput} from 'react-native'
 import ImgurApi from "./ImgurApi";
 import ImgurPost from "./ImgurPost";
+import Session from "./Session";
 
 
 export default class ImgurFeed extends Component {
@@ -31,6 +32,7 @@ export default class ImgurFeed extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevState.feedName !== this.state.feedName) {
+            // Session.get().then((session) => console.log(session));
             this.api.get(this.state.feedName).then((response) => {
                 this.setState({
                     jsonPosts: response.data.items,
