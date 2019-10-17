@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {View, Button} from 'react-native'
+import {View, Button, Image, Text} from 'react-native'
 import ImagePicker from 'react-native-image-picker'
 
 const options = {
@@ -12,8 +12,28 @@ const options = {
 };
 
 export default class Upload extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pathToImg: 'images'
+        }
+    }
+
+    displayImage() {
+        if (this.state.pathToImg !== 'images')
+            return (
+                <Image style={{width: 300, height: 300}} source={{uri: this.state.pathToImg}}/>
+            );
+        else
+            return (
+                <Text>image here...</Text>
+            );
+    }
+
     takePhoto() {
-        ImagePicker.launchCamera(options, (response) => {console.log(response)});
+        ImagePicker.launchCamera(options, (response) => {
+            this.setState({pathToImg: response.uri});
+        });
     }
 
     render() {
@@ -23,6 +43,7 @@ export default class Upload extends Component {
                     title={"Take a photo"}
                     onPress={() => this.takePhoto()}
                 />
+                {this.displayImage()}
             </View>
         )
     }
