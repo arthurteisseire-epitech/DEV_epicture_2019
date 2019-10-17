@@ -22,6 +22,7 @@ export default class ImgurApi {
 
     upload(imgBytes) {
         return Session.get().then((session) => {
+            console.log(JSON.parse(session).access_token);
             return axios({
                 method: 'POST',
                 url: 'https://api.imgur.com/3/image',
@@ -39,5 +40,20 @@ export default class ImgurApi {
         });
     }
 
-    // TODO Favoris, up/down vote, image de profile
+    addToFavorite(imgId) {
+        return Session.get().then((session) => {
+            return axios({
+                method: 'POST',
+                url: 'https://api.imgur.com/3/image/' + imgId + '/favorite',
+                headers: {
+                    'Authorization': 'Bearer ' + JSON.parse(session).access_token
+                }
+            }).then((response) => {
+                return response.data;
+            }).catch((error) => {
+                console.log('error : ' + error);
+            });
+        });
+    }
+    // TODO up/down vote, image de profile
 }
