@@ -56,16 +56,16 @@ export default class ImgurApi {
         });
     }
 
-    getAvatar() {
+    getAvatar(accountName) {
         return Session.get().then((session) => {
             return axios({
                 method: 'GET',
-                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorite',
+                url: 'https://api.imgur.com/3/account/' + accountName + '/avatar',
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(session).access_token
                 }
             }).then((response) => {
-                return response.data;
+                return response.data.data.avatar;
             }).catch((error) => {
                 console.log('error : ' + error);
             });
