@@ -13,7 +13,6 @@ export default class ImgurApi {
                 'Authorization': 'Client-ID ' + this.apiKey
             }
         }).then((response) => {
-            console.log('data: ' + response.data);
             return response.data;
         }).catch((error) => {
             console.log('error : ' + error);
