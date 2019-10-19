@@ -5,7 +5,6 @@ import {Actions} from 'react-native-router-flux';
 export default class CustomTabBar extends React.Component {
 
     keyToImgSrc(key) {
-      console.log("KEY MA BITE ", key);
       if (key == 'home') {
         return(require('../img/home.png'))
       } else if (key == 'feed') {
