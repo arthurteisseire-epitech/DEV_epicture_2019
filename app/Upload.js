@@ -61,16 +61,18 @@ export default class Upload extends Component {
     }
 
     uploadPhoto() {
-        if (this.state.img) {
-            this.api.upload(this.state.img.data).then((response) => {
-                this.setState({
-                    img: null,
-                    uploadingMessage: ''
+        if (this.state.uploadingMessage !== wording.uploadingPhoto) {
+            if (this.state.img) {
+                this.api.upload(this.state.img.data).then((response) => {
+                    this.setState({
+                        img: null,
+                        uploadingMessage: ''
+                    });
                 });
-            });
-            this.setState({uploadingMessage: wording.uploadingPhoto});
-        } else {
-            this.setState({uploadingMessage: wording.needPhotoToUpload});
+                this.setState({uploadingMessage: wording.uploadingPhoto});
+            } else {
+                this.setState({uploadingMessage: wording.needPhotoToUpload});
+            }
         }
     }
 
