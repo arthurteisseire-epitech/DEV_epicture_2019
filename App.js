@@ -22,12 +22,14 @@ export default class App extends Component {
                         <Tabs
                             tabBarComponent={TabBar}
                             key={'tabs'}
-                            hideNavBar>
+                            hideNavBar
+                        >
                             <Scene
                                 key="feed"
                                 icon='../img/home'
                                 title="Feed"
                                 component={ImgurFeed}
+                                hideNavBar
                                 /*navBar={NavBar}*/
                             />
                             <Scene
@@ -35,6 +37,7 @@ export default class App extends Component {
                                 icon='../img/upload'
                                 title="Upload"
                                 component={Upload}
+                                hideNavBar
                                 /*navBar={NavBar}*/
                             />
                         </Tabs>

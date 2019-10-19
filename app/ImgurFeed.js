@@ -63,8 +63,8 @@ export default class ImgurFeed extends Component {
                     <FlatList
                         style={styles.FeedStyle}
                         data={this.state.jsonPosts}
-                        initialNumToRender={2}
-                        windowSize={3}
+                        initialNumToRender={4}
+                        windowSize={5}
                         renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
                     />
             });
