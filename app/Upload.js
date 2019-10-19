@@ -9,8 +9,8 @@ export default class Upload extends Component {
         super(props);
         this.api = new ImgurApi;
         this.state = {
-            img: [],
-            uploading: false
+            img: null,
+            uploadingMessage: ''
         };
     }
 
@@ -25,9 +25,10 @@ export default class Upload extends Component {
                     title={wording.choosePhotoTitle}
                     onPress={() => this.choosePhotoFromGallery()}
                 />
-                {this.displayImage()}
+                {this.displayPhoto()}
                 <Button
                     title={wording.uploadTitle}
+                    testID={wording.uploadTitle}
                     onPress={() => this.uploadPhoto()}
                 />
                 {this.notifyPhotoIsUploading()}
@@ -37,35 +38,45 @@ export default class Upload extends Component {
 
     choosePhotoFromGallery() {
         ImagePicker.launchImageLibrary({}, (response) => {
-            this.setState({img: response});
+            this.setState({
+                img: response,
+                uploadingMessage: ''
+            });
         });
     }
 
     takePhoto() {
         ImagePicker.launchCamera({}, (response) => {
-            this.setState({img: response});
+            this.setState({
+                img: response,
+                uploadingMessage: ''
+            });
         });
     }
 
-    displayImage() {
-        if (this.state.img && this.state.img.length > 0)
+    displayPhoto() {
+        if (this.state.img)
             return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}} testID={wording.imgToUploadId}/>;
         return [];
     }
 
     uploadPhoto() {
-        this.api.upload(this.state.img.data).then((response) => {
-            this.setState({
-                img: [],
-                uploading: false
+        if (this.state.img) {
+            this.api.upload(this.state.img.data).then((response) => {
+                this.setState({
+                    img: null,
+                    uploadingMessage: ''
+                });
             });
-        });
-        this.setState({uploading: true});
+            this.setState({uploadingMessage: wording.uploadingPhoto});
+        } else {
+            this.setState({uploadingMessage: wording.needPhotoToUpload});
+        }
     }
 
     notifyPhotoIsUploading() {
-        if (this.state.uploading === true)
-            return <Text>{wording.uploadingPhoto}</Text>;
+        if (this.state.uploadingMessage)
+            return <Text>{this.state.uploadingMessage}</Text>;
         return []
     }
 }
