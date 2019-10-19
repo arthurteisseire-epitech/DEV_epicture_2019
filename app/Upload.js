@@ -55,7 +55,6 @@ export default class Upload extends Component {
 
     uploadPhoto() {
         this.api.upload(this.state.img.data).then((response) => {
-            console.log(JSON.stringify(response));
             this.setState({
                 img: [],
                 uploading: false
