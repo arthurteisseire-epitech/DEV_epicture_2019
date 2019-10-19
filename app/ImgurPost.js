@@ -6,23 +6,28 @@ export default class ImgurPost extends PureComponent {
     constructor(props) {
         super(props);
         this.api = new ImgurApi;
+        this.imgRegex = /.*\.(jpeg|png|jpg)$/;
         this.state = {
-            avatar_url: '',
+            avatar_url: 'not_defined',
         };
     }
 
-    componentDidMount(): void {
+    componentDidMount() {
         this.api.getAvatar(this.props.jsonData.account_url).then((avatar) => {
             this.setState({avatar_url: avatar});
         });
-
     }
 
-    displayImageIfExist(jsonData) {
-        if (jsonData.images !== undefined)
-            return <Image
-                style={styles.PostImage}
-                source={{uri: this.props.jsonData.images[0].link}}/>;
+    displayImageIfExist() {
+        if (this.props.jsonData.images !== undefined && this.imgRegex.test(this.props.jsonData.images[0].link)) {
+            console.log(this.props.jsonData.images[0].link);
+            return (
+                <Image
+                    style={styles.PostImage}
+                    source={{uri: this.props.jsonData.images[0].link}}
+                />
+            );
+        }
         return null;
     }
 
@@ -39,7 +44,7 @@ export default class ImgurPost extends PureComponent {
                         <Text style={styles.PostTitle}> {this.props.jsonData.title} </Text>
                     </View>
                 </View>
-                {this.displayImageIfExist(this.props.jsonData)}
+                {this.displayImageIfExist()}
             </View>
         );
     }
