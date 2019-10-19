@@ -19,6 +19,10 @@ export default class Upload extends Component {
                     title={"Take a photo"}
                     onPress={() => this.takePhoto()}
                 />
+                <Button
+                    title={"Choose a photo"}
+                    onPress={() => this.choosePhotoFromGallery()}
+                />
                 {this.displayImage()}
                 <Button
                     title={"Upload"}
@@ -28,10 +32,15 @@ export default class Upload extends Component {
         )
     }
 
+    choosePhotoFromGallery() {
+        ImagePicker.launchImageLibrary({}, (response) => {
+            this.setState({img: response});
+        });
+    }
+
     takePhoto() {
         ImagePicker.launchCamera({}, (response) => {
             this.setState({img: response});
-            console.log('response: ' + JSON.stringify(response));
         });
     }
 
