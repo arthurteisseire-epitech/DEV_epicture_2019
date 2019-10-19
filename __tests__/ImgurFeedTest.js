@@ -15,14 +15,14 @@ test("Default feed", () => {
 test("Change feed", () => {
     const page = render(<ImgurFeed/>);
     const feedInput = page.getByPlaceholder(wording.feedPlaceHolder);
-    fireEvent(feedInput, 'onSubmitEditing', {"nativeEvent": {"target": 83, "text": "cats"}});
+    fireEvent(feedInput, 'onSubmitEditing', {"nativeEvent": {"target": 0, "text": "cats"}});
     expect(page.queryByText(wording.loadingImages)).toBeTruthy();
 });
 
 test("Change feed wait loading", async () => {
     const page = render(<ImgurFeed/>);
     const feedInput = page.getByPlaceholder(wording.feedPlaceHolder);
-    fireEvent(feedInput, 'onSubmitEditing', {"nativeEvent": {"target": 83, "text": "cats"}});
+    fireEvent(feedInput, 'onSubmitEditing', {"nativeEvent": {"target": 0, "text": "cats"}});
     await sleep(2000);
     const success = await waitForElement(() =>
         page.queryByText(wording.imagesLoaded)
