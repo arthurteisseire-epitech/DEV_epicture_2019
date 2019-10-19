@@ -51,7 +51,6 @@ export default class ImgurFeed extends Component {
 
     updateImages() {
         if (this.state.loading) {
-            console.log(wording.loadingImages);
             this.setState({
                 text: <Text>{wording.loadingImages}</Text>
             });
