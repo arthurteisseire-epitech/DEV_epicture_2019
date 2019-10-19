@@ -5,14 +5,13 @@ import {Actions} from 'react-native-router-flux';
 export default class CustomTabBar extends React.Component {
 
     keyToImgSrc(key) {
-        console.log("KEY MA BITE ", key);
-        if (key == 'home') {
+        if (key === 'home') {
             return (require('../img/home.png'))
-        } else if (key == 'feed') {
+        } else if (key === 'feed') {
             return (require('../img/home.png'))
-        } else if (key == 'upload') {
+        } else if (key === 'upload') {
             return (require('../img/upload.png'))
-        } else if (key == 'profile') {
+        } else if (key === 'profile') {
             return (require('../img/profile.png'))
         }
     }
@@ -20,7 +19,6 @@ export default class CustomTabBar extends React.Component {
     render() {
         const {state} = this.props.navigation;
         const activeTabIndex = state.index;
-
 
         return (
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
