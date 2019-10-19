@@ -7,8 +7,8 @@ export default class ImgurApi {
         this.apiKey = 'a34ccf491aadd2c';
     }
 
-    get(url) {
-        return axios.get('https://api.imgur.com/3/gallery/t/' + url, {
+    getFeed(feedName) {
+        return axios.get('https://api.imgur.com/3/gallery/t/' + feedName, {
             headers: {
                 'Authorization': 'Client-ID ' + this.apiKey
             }

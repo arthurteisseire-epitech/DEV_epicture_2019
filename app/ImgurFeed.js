@@ -36,7 +36,7 @@ export default class ImgurFeed extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevState.feedName !== this.state.feedName) {
-            this.api.get(this.state.feedName).then((response) => {
+            this.api.getFeed(this.state.feedName).then((response) => {
                 this.setState({
                     jsonPosts: response.data.items,
                     loading: false,
