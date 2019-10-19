@@ -14,29 +14,29 @@ export default class App extends Component {
             <View style={{flex: 1}}>
                 <Router>
                     <Stack key={"root"}>
-                      <Scene
-                        key="login"
-                        title="Login"
-                        component={Login}
-                      />
+                        <Scene
+                            key="login"
+                            title="Login"
+                            component={Login}
+                        />
                         <Tabs
-                          tabBarComponent={TabBar}
-                          key={'tabs'}
-                          hideNavBar>
-                          <Scene
-                            key="upload"
-                            icon='../img/upload'
-                            title="Upload"
-                            component={Upload}
-                            /*navBar={NavBar}*/
-                          />
-                          <Scene
-                            key="feed"
-                            icon='../img/home'
-                            title="Feed"
-                            component={ImgurFeed}
-                            /*navBar={NavBar}*/
-                          />
+                            tabBarComponent={TabBar}
+                            key={'tabs'}
+                            hideNavBar>
+                            <Scene
+                                key="feed"
+                                icon='../img/home'
+                                title="Feed"
+                                component={ImgurFeed}
+                                /*navBar={NavBar}*/
+                            />
+                            <Scene
+                                key="upload"
+                                icon='../img/upload'
+                                title="Upload"
+                                component={Upload}
+                                /*navBar={NavBar}*/
+                            />
                         </Tabs>
                     </Stack>
                 </Router>

@@ -20,7 +20,6 @@ export default class ImgurPost extends PureComponent {
 
     displayImageIfExist() {
         if (this.props.jsonData.images !== undefined && this.imgRegex.test(this.props.jsonData.images[0].link)) {
-            console.log(this.props.jsonData.images[0].link);
             return (
                 <Image
                     style={styles.PostImage}

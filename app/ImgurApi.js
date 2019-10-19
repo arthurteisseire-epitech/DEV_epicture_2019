@@ -22,7 +22,6 @@ export default class ImgurApi {
 
     upload(imgBytes) {
         return Session.get().then((session) => {
-            console.log(JSON.parse(session).access_token);
             return axios({
                 method: 'POST',
                 url: 'https://api.imgur.com/3/image',

@@ -2,13 +2,15 @@ import React, {Component} from 'react'
 import {View, Button, Image, Text} from 'react-native'
 import ImagePicker from 'react-native-image-picker'
 import ImgurApi from "./ImgurApi";
+import wording from './utils/wording'
 
 export default class Upload extends Component {
     constructor(props) {
         super(props);
         this.api = new ImgurApi;
         this.state = {
-            img: []
+            img: [],
+            uploading: false
         };
     }
 
@@ -16,18 +18,19 @@ export default class Upload extends Component {
         return (
             <View>
                 <Button
-                    title={"Take a photo"}
+                    title={wording.takePhotoTitle}
                     onPress={() => this.takePhoto()}
                 />
                 <Button
-                    title={"Choose a photo"}
+                    title={wording.choosePhotoTitle}
                     onPress={() => this.choosePhotoFromGallery()}
                 />
                 {this.displayImage()}
                 <Button
-                    title={"Upload"}
+                    title={wording.uploadTitle}
                     onPress={() => this.uploadPhoto()}
                 />
+                {this.notifyPhotoIsUploading()}
             </View>
         )
     }
@@ -46,18 +49,24 @@ export default class Upload extends Component {
 
     displayImage() {
         if (this.state.img !== 'images')
-            return (
-                <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}}/>
-            );
-        else
-            return (
-                <Text>image here...</Text>
-            );
+            return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}}/>;
+        return [];
     }
 
     uploadPhoto() {
         this.api.upload(this.state.img.data).then((response) => {
             console.log(JSON.stringify(response));
+            this.setState({
+                img: [],
+                uploading: false
+            });
         });
+        this.setState({uploading: true});
+    }
+
+    notifyPhotoIsUploading() {
+        if (this.state.uploading === true)
+            return <Text>{wording.uploadingPhoto}</Text>;
+        return []
     }
 }
