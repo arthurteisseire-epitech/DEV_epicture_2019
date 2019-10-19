@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Text, View, FlatList, TextInput, StyleSheet} from 'react-native';
 import ImgurApi from './ImgurApi';
 import ImgurPost from './ImgurPost';
+import wording from './utils/wording'
 
 export default class ImgurFeed extends Component {
     constructor(props) {
@@ -11,6 +12,7 @@ export default class ImgurFeed extends Component {
             jsonPosts: [],
             loading: true,
             images: [],
+            text: [],
             feedName: '',
         };
     }
@@ -21,9 +23,10 @@ export default class ImgurFeed extends Component {
                 {/*<View style={{flex: 1, width: 500, height: 500, backgroundColor: 'blue'}}>*/}
                 <TextInput
                     style={styles.FeedSearchBar}
-                    placeholder="Look for a feed !"
+                    placeholder={wording.feedPlaceHolder}
                     onSubmitEditing={(t) => this.setState({feedName: t.nativeEvent.text, loading: true})}
                 />
+                {this.state.text}
                 {this.state.images}
                 {/*</View>*/}
                 {/*<NavBar/>*/}
@@ -48,21 +51,24 @@ export default class ImgurFeed extends Component {
 
     updateImages() {
         if (this.state.loading) {
-            this.state.images = (
-                <View style={styles.FeedStyle}>
-                    <Text>Loading images…</Text>
-                </View>
-            );
+            console.log(wording.loadingImages);
+            this.setState({
+                text: <Text>{wording.loadingImages}</Text>
+            });
         } else {
-            this.state.images = (
-                <FlatList
-                    style={styles.FeedStyle}
-                    data={this.state.jsonPosts}
-                    initialNumToRender={2}
-                    windowSize={3}
-                    renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
-                />
-            );
+            this.setState({
+                text: <Text>{wording.imagesLoaded}</Text>
+            });
+            this.setState({
+                images:
+                    <FlatList
+                        style={styles.FeedStyle}
+                        data={this.state.jsonPosts}
+                        initialNumToRender={2}
+                        windowSize={3}
+                        renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
+                    />
+            });
             this.setState({loading: false});
         }
     }
