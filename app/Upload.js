@@ -48,8 +48,8 @@ export default class Upload extends Component {
     }
 
     displayImage() {
-        if (this.state.img !== 'images')
-            return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}}/>;
+        if (this.state.img && this.state.img.length > 0)
+            return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}} testID={wording.imgToUploadId}/>;
         return [];
     }
 

@@ -6,4 +6,5 @@ module.exports = {
     takePhotoTitle: "Take a photo",
     choosePhotoTitle: "Choose a photo",
     uploadTitle: "Upload",
+    imgToUploadId: "imgToUpload",
 };
