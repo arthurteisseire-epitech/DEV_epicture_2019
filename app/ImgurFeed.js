@@ -10,7 +10,7 @@ export default class ImgurFeed extends Component {
         this.api = new ImgurApi;
         this.state = {
             jsonPosts: [],
-            loading: true,
+            loading: false,
             images: [],
             text: [],
             feedName: '',
