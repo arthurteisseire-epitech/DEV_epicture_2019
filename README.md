@@ -56,6 +56,7 @@ To open full documentation in your browser open ./docs/index.html with your brow
 - react-native-dotenv
 - react-native-router-flux
 - react-native-webview
+- react-native-cookie
 - @react-native-community/async-storage
 
 ### Documentation
