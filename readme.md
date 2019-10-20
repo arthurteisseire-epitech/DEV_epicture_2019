@@ -7,10 +7,10 @@
    - android-studio
    - the android emulator
 - In addition add "ANDROID_SDK_ROOT=$HOME/Android/Sdk" permanently to your env
-- At the root of the project exec the following command:
+- At the root of the project exec the following command (replace $USER by your username):
 
 
-    echo 'sdk.dir = $HOME/Android/Sdk' > ./android/local.properties
+    echo 'sdk.dir = /home/$USER/Android/Sdk' > ./android/local.properties
 
 - Logout
 - Install yarn
@@ -25,7 +25,22 @@
 
     react-native start & ; react-native run-android
 
-- Wait a bit
+- Enjoy the app
+
+## Install on your android phone
+- Make sure you did ALL the steps in the Install(above) section
+- Enable debug mode on your phone
+- Connect your phone to your computer
+- Create the .aab (It can take some time):
+
+
+    cd android && ./gradlew BundleRelease && cd ..
+
+- Install the app on your phone:
+
+
+    react-native run-android --variant=release
+
 - Enjoy the app
 
 ## Dependencies installed
