@@ -1,5 +1,11 @@
 # Epicture in react-native
 
+## Documentation
+To open full documentation in your browser open ./docs/index.html with your browser, example:
+
+
+    firefox ./docs/index.html
+
 ## Install
 - Follow this doc https://facebook.github.io/react-native/docs/getting-started to install
    - node.js
