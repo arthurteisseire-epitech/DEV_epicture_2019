@@ -19,7 +19,6 @@ export default class ImgurFeed extends Component {
     render() {
         return (
             <View style={{justifyContent: 'space-between'}}>
-                {/*<View style={{flex: 1, width: 500, height: 500, backgroundColor: 'blue'}}>*/}
                 <TextInput
                     style={styles.FeedSearchBar}
                     placeholder={wording.feedPlaceHolder}
@@ -27,8 +26,6 @@ export default class ImgurFeed extends Component {
                 />
                 {this.state.text}
                 {this.state.images}
-                {/*</View>*/}
-                {/*<NavBar/>*/}
             </View>
         );
     }

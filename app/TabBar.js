@@ -8,11 +8,13 @@ export default class CustomTabBar extends React.Component {
       if (key === 'home') {
         return (require('../img/home.png'))
       } else if (key === 'feed') {
-        return (require('../img/home.png'))
+        return (require('../img/search.png'))
       } else if (key === 'upload') {
         return (require('../img/upload.png'))
       } else if (key === 'profile') {
         return (require('../img/profile.png'))
+      } else if (key === 'fav') {
+        return (require('../img/fav.png'))
       }
     }
 

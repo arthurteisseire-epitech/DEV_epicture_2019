@@ -5,6 +5,7 @@ import {Router, Scene, Stack, Tabs} from 'react-native-router-flux'
 import ImgurFeed from "./app/ImgurFeed";
 import Upload from "./app/Upload";
 import TabBar from './app/TabBar';
+import ImgurFav from './app/ImgurFav';
 /*import NavBar from "app/NavBar"*/
 
 export default class App extends Component {
@@ -26,19 +27,21 @@ export default class App extends Component {
                         >
                             <Scene
                                 key="feed"
-                                icon='../img/home'
                                 title="Feed"
                                 component={ImgurFeed}
                                 hideNavBar
-                                /*navBar={NavBar}*/
                             />
                             <Scene
                                 key="upload"
-                                icon='../img/upload'
                                 title="Upload"
                                 component={Upload}
                                 hideNavBar
-                                /*navBar={NavBar}*/
+                            />
+                            <Scene
+                              key="fav"
+                              title="Fav"
+                              component={ImgurFav}
+                              hideNavBar
                             />
                         </Tabs>
                     </Stack>
