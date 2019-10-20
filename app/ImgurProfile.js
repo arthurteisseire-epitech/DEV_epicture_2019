@@ -17,8 +17,6 @@ export default class ImgurProfile extends Component {
         });
     }
 
-    }
-
   render() {
     return (
       <View>
