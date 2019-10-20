@@ -1,6 +1,6 @@
 {
   "coverage": "0%",
-  "expectCount": 43,
+  "expectCount": 53,
   "actualCount": 0,
   "files": {
     "app/ImgurApi.js": {
@@ -13,6 +13,17 @@
         38,
         54,
         72
+      ]
+    },
+    "app/ImgurFav.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10,
+        19,
+        27
       ]
     },
     "app/ImgurFeed.js": {
@@ -40,6 +51,17 @@
         20,
         32,
         51
+      ]
+    },
+    "app/ImgurProfile.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8,
+        13,
+        21
       ]
     },
     "app/Login.js": {

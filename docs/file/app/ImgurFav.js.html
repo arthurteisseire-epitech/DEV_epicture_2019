@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">app/utils/wording.js | epicture</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">app/ImgurFav.js | epicture</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -42,19 +42,90 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">app/utils/wording.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">module.exports = {
-    feedPlaceHolder: &quot;Look for a feed&quot;,
-    loadingImages: &quot;Loading images...&quot;,
-    imagesLoaded: &quot;Images are loaded !&quot;,
-    uploadingPhoto: &quot;Uploading your photo...&quot;,
-    takePhotoTitle: &quot;Take a photo&quot;,
-    choosePhotoTitle: &quot;Choose a photo&quot;,
-    uploadTitle: &quot;Upload&quot;,
-    imgToUploadId: &quot;imgToUpload&quot;,
-    needPhotoToUpload: &quot;Choose a photo before uploading&quot;,
-};
-</code></pre>
+<div class="content" data-ice="content"><h1 data-ice="title">app/ImgurFav.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, {Component} from &apos;react&apos;;
+import {Text, View, FlatList, TextInput, StyleSheet} from &apos;react-native&apos;;
+import ImgurApi from &apos;./ImgurApi&apos;;
+import ImgurPost from &apos;./ImgurPost&apos;;
+import wording from &apos;./utils/wording&apos;;
+
+export default class ImgurFav extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      jsonFavs: [],
+      loading: false,
+      images: [],
+      text: [],
+      page_id: 0,
+    };
+  }
+
+  componentDidMount() {
+    ImgurApi.getFavoritesOnPage(this.state.page_id).then((response) =&gt; {
+      console.log(&quot;heyyy&quot;);
+      console.log(response.data);
+      // this.setState({});
+    });
+  }
+
+  render() {
+    return (
+      &lt;View&gt;
+        &lt;Text&gt; nothing &lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+  //
+  // componentDidUpdate(prevProps, prevState, snapshot) {
+  //   if (prevState.feedName !== this.state.feedName) {
+  //     ImgurApi.getFeed(this.state.feedName).then((response) =&gt; {
+  //       this.setState({
+  //         jsonPosts: response.data.items,
+  //         loading: false,
+  //       });
+  //     }, (error) =&gt; {
+  //       console.log(error);
+  //     });
+  //   }
+  //   if (prevState.loading !== this.state.loading)
+  //     this.updateImages();
+  // }
+//
+//   updateImages() {
+//     if (this.state.loading) {
+//       this.setState({
+//         text: &lt;Text&gt;{wording.loadingImages}&lt;/Text&gt;
+//       });
+//     } else {
+//       this.setState({
+//         text: &lt;Text&gt;{wording.imagesLoaded}&lt;/Text&gt;
+//       });
+//       this.setState({
+//         images:
+//           &lt;FlatList
+//             style={styles.FeedStyle}
+//             data={this.state.jsonPosts}
+//             initialNumToRender={4}
+//             windowSize={5}
+//             renderItem={(jsonPost) =&gt; &lt;ImgurPost jsonData={jsonPost.item}/&gt;}
+//           /&gt;
+//       });
+//       this.setState({loading: false});
+//     }
+//   }
+// };
+
+  // const;
+  // styles = StyleSheet.create({
+  //   FeedStyle: {
+  //     backgroundColor: &apos;#003247&apos;,
+  //   },
+  //   FeedSearchBar: {
+  //     backgroundColor: &apos;#FFFFB8&apos;,
+  //   },
+  // });</code></pre>
 
 </div>
 
