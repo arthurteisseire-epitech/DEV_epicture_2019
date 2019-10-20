@@ -16,4 +16,12 @@ export default class Session {
             console.log(e);
         }
     }
+
+    static async clear() {
+        try {
+            return await AsyncStorage.removeItem('session');
+        } catch (e) {
+            console.log(e);
+        }
+    }
 }
