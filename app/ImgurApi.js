@@ -53,15 +53,13 @@ export default class ImgurApi {
 
     static getFavoritesOnPage(page) {
         return Session.get().then((session) => {
-            console.log('https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorites/' + page + '/newest');
             return axios({
                 method: 'GET',
-                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorites/' + page + '/newest',
+                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_username + '/favorites/' + page + '/newest',
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(session).access_token
                 }
             }).then((response) => {
-                console.log("bearer: " + JSON.parse(session).access_token);
                 return response.data;
             }).catch((error) => {
                 console.log('error : ' + error);

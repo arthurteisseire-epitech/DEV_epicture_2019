@@ -12,8 +12,8 @@ export default class ImgurProfile extends Component {
 
   componentDidMount(): void {
     Session.get().then((session) => {
-      console.log("session: " + JSON.parse(session).account_name);
-      this.setState({account_name: JSON.parse(session).account_name})
+      console.log("session: " + session);
+      this.setState({account_name: JSON.parse(session).account_username})
     });
 
     }
