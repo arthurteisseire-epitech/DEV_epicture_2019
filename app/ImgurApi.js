@@ -1,28 +1,23 @@
+import {CLIENT_ID} from 'react-native-dotenv'
 import axios from 'axios'
 import Session from "./Session";
 
 
 export default class ImgurApi {
-    constructor() {
-        this.apiKey = 'a34ccf491aadd2c';
-    }
-
-    get(url) {
-        return axios.get('https://api.imgur.com/3/gallery/t/' + url, {
+    static getFeed(feedName) {
+        return axios.get('https://api.imgur.com/3/gallery/t/' + feedName, {
             headers: {
-                'Authorization': 'Client-ID ' + this.apiKey
+                'Authorization': 'Client-ID ' + CLIENT_ID
             }
         }).then((response) => {
-            console.log('data: ' + response.data);
             return response.data;
         }).catch((error) => {
             console.log('error : ' + error);
         });
     }
 
-    upload(imgBytes) {
+    static upload(imgBytes) {
         return Session.get().then((session) => {
-            console.log(JSON.parse(session).access_token);
             return axios({
                 method: 'POST',
                 url: 'https://api.imgur.com/3/image',
@@ -40,7 +35,7 @@ export default class ImgurApi {
         });
     }
 
-    addToFavorite(imgId) {
+    static addToFavorite(imgId) {
         return Session.get().then((session) => {
             return axios({
                 method: 'POST',
@@ -56,7 +51,7 @@ export default class ImgurApi {
         });
     }
 
-    getFavoritesOnPage(page) {
+    static getFavoritesOnPage(page) {
         return Session.get().then((session) => {
             return axios({
                 method: 'GET',
@@ -72,7 +67,7 @@ export default class ImgurApi {
         });
     }
 
-    getAvatar(accountName) {
+    static getAvatar(accountName) {
         return Session.get().then((session) => {
             return axios({
                 method: 'GET',

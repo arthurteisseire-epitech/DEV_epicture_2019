@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 import {View, Button, Image, Text} from 'react-native'
 import ImagePicker from 'react-native-image-picker'
 import ImgurApi from "./ImgurApi";
+import wording from './utils/wording'
 
 export default class Upload extends Component {
     constructor(props) {
         super(props);
-        this.api = new ImgurApi;
         this.state = {
-            img: []
+            img: null,
+            uploadingMessage: ''
         };
     }
 
@@ -16,39 +17,67 @@ export default class Upload extends Component {
         return (
             <View>
                 <Button
-                    title={"Take a photo"}
+                    title={wording.takePhotoTitle}
                     onPress={() => this.takePhoto()}
                 />
-                {this.displayImage()}
                 <Button
-                    title={"Upload"}
+                    title={wording.choosePhotoTitle}
+                    onPress={() => this.choosePhotoFromGallery()}
+                />
+                {this.displayPhoto()}
+                <Button
+                    title={wording.uploadTitle}
+                    testID={wording.uploadTitle}
                     onPress={() => this.uploadPhoto()}
                 />
+                {this.notifyPhotoIsUploading()}
             </View>
         )
     }
 
-    takePhoto() {
-        ImagePicker.launchCamera({}, (response) => {
-            this.setState({img: response});
-            console.log('response: ' + JSON.stringify(response));
+    choosePhotoFromGallery() {
+        ImagePicker.launchImageLibrary({}, (response) => {
+            this.setState({
+                img: response,
+                uploadingMessage: ''
+            });
         });
     }
 
-    displayImage() {
-        if (this.state.img !== 'images')
-            return (
-                <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}}/>
-            );
-        else
-            return (
-                <Text>image here...</Text>
-            );
+    takePhoto() {
+        ImagePicker.launchCamera({}, (response) => {
+            this.setState({
+                img: response,
+                uploadingMessage: ''
+            });
+        });
+    }
+
+    displayPhoto() {
+        if (this.state.img)
+            return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}} testID={wording.imgToUploadId}/>;
+        return [];
     }
 
     uploadPhoto() {
-        this.api.upload(this.state.img.data).then((response) => {
-            console.log(JSON.stringify(response));
-        });
+        if (this.state.uploadingMessage !== wording.uploadingPhoto) {
+            if (this.state.img) {
+                ImgurApi.upload(this.state.img.data).then((response) => {
+                    this.setState({
+                        img: null,
+                        uploadingMessage: ''
+                    });
+                });
+                this.setState({uploadingMessage: wording.uploadingPhoto});
+            } else {
+                this.setState({uploadingMessage: wording.needPhotoToUpload});
+            }
+        }
+    }
+
+    notifyPhotoIsUploading() {
+        if (this.state.uploadingMessage)
+            return <Text>{this.state.uploadingMessage}</Text>;
+        return []
     }
 }
