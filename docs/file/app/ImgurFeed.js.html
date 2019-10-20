@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">app/ImgurFeed.js | epicture</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/ImgurApi.js~ImgurApi.html">ImgurApi</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/ImgurFeed.js~ImgurFeed.html">ImgurFeed</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/ImgurPost.js~ImgurPost.html">ImgurPost</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/Login.js~Login.html">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/Session.js~Session.html">Session</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/TabBar.js~CustomTabBar.html">CustomTabBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/Upload.js~Upload.html">Upload</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">app/ImgurFeed.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, {Component} from &apos;react&apos;;
+import {Text, View, FlatList, TextInput, StyleSheet} from &apos;react-native&apos;;
+import ImgurApi from &apos;./ImgurApi&apos;;
+import ImgurPost from &apos;./ImgurPost&apos;;
+import wording from &apos;./utils/wording&apos;
+
+export default class ImgurFeed extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            jsonPosts: [],
+            loading: false,
+            images: [],
+            text: [],
+            feedName: &apos;&apos;,
+        };
+    }
+
+    render() {
+        return (
+            &lt;View style={{justifyContent: &apos;space-between&apos;}}&gt;
+                {/*&lt;View style={{flex: 1, width: 500, height: 500, backgroundColor: &apos;blue&apos;}}&gt;*/}
+                &lt;TextInput
+                    style={styles.FeedSearchBar}
+                    placeholder={wording.feedPlaceHolder}
+                    onSubmitEditing={(t) =&gt; this.setState({feedName: t.nativeEvent.text, loading: true})}
+                /&gt;
+                {this.state.text}
+                {this.state.images}
+            &lt;/View&gt;
+        );
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevState.feedName !== this.state.feedName) {
+            ImgurApi.getFeed(this.state.feedName).then((response) =&gt; {
+                this.setState({
+                    jsonPosts: response.data.items,
+                    loading: false,
+                });
+            }, (error) =&gt; {
+                console.log(error);
+            });
+        }
+        if (prevState.loading !== this.state.loading)
+            this.updateImages();
+    }
+
+    updateImages() {
+        if (this.state.loading) {
+            this.setState({
+                text: &lt;Text&gt;{wording.loadingImages}&lt;/Text&gt;
+            });
+        } else {
+            this.setState({
+                text: &lt;Text&gt;{wording.imagesLoaded}&lt;/Text&gt;
+            });
+            this.setState({
+                images:
+                    &lt;FlatList
+                        style={styles.FeedStyle}
+                        data={this.state.jsonPosts}
+                        initialNumToRender={4}
+                        windowSize={5}
+                        renderItem={(jsonPost) =&gt; &lt;ImgurPost jsonData={jsonPost.item}/&gt;}
+                    /&gt;
+            });
+            this.setState({loading: false});
+        }
+    }
+};
+
+const styles = StyleSheet.create({
+    FeedStyle: {
+        backgroundColor: &apos;#003247&apos;,
+    },
+    FeedSearchBar: {
+        backgroundColor: &apos;#FFFFB8&apos;,
+    },
+});</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

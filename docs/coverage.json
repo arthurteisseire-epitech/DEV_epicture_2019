@@ -1,0 +1,92 @@
+{
+  "coverage": "0%",
+  "expectCount": 43,
+  "actualCount": 0,
+  "files": {
+    "app/ImgurApi.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        19,
+        38,
+        54,
+        72
+      ]
+    },
+    "app/ImgurFeed.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10,
+        19,
+        34,
+        49,
+        73
+      ]
+    },
+    "app/ImgurPost.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8,
+        9,
+        14,
+        20,
+        32,
+        51
+      ]
+    },
+    "app/Login.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        9,
+        12,
+        23,
+        28,
+        41
+      ]
+    },
+    "app/Session.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        12
+      ]
+    },
+    "app/TabBar.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        21
+      ]
+    },
+    "app/Upload.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10,
+        16,
+        38,
+        47,
+        56,
+        63,
+        79
+      ]
+    }
+  }
+}

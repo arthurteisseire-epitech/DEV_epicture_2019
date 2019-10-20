@@ -1,0 +1,1561 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "app/ImgurApi.js",
+    "content": "import {CLIENT_ID} from 'react-native-dotenv'\nimport axios from 'axios'\nimport Session from \"./Session\";\n\n\nexport default class ImgurApi {\n    static getFeed(feedName) {\n        return axios.get('https://api.imgur.com/3/gallery/t/' + feedName, {\n            headers: {\n                'Authorization': 'Client-ID ' + CLIENT_ID\n            }\n        }).then((response) => {\n            return response.data;\n        }).catch((error) => {\n            console.log('error : ' + error);\n        });\n    }\n\n    static upload(imgBytes) {\n        return Session.get().then((session) => {\n            return axios({\n                method: 'POST',\n                url: 'https://api.imgur.com/3/image',\n                headers: {\n                    'Authorization': 'Bearer ' + JSON.parse(session).access_token\n                },\n                data: {\n                    'image': imgBytes,\n                }\n            }).then((response) => {\n                return response.data;\n            }).catch((error) => {\n                console.log('error : ' + error);\n            });\n        });\n    }\n\n    static addToFavorite(imgId) {\n        return Session.get().then((session) => {\n            return axios({\n                method: 'POST',\n                url: 'https://api.imgur.com/3/image/' + imgId + '/favorite',\n                headers: {\n                    'Authorization': 'Bearer ' + JSON.parse(session).access_token\n                }\n            }).then((response) => {\n                return response.data;\n            }).catch((error) => {\n                console.log('error : ' + error);\n            });\n        });\n    }\n\n    static getFavoritesOnPage(page) {\n        return Session.get().then((session) => {\n            console.log('https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorites/' + page + '/newest');\n            return axios({\n                method: 'GET',\n                url: 'https://api.imgur.com/3/account/' + JSON.parse(session).account_name + '/favorites/' + page + '/newest',\n                headers: {\n                    'Authorization': 'Bearer ' + JSON.parse(session).access_token\n                }\n            }).then((response) => {\n                console.log(\"bearer: \" + JSON.parse(session).access_token);\n                return response.data;\n            }).catch((error) => {\n                console.log('error : ' + error);\n            });\n        });\n    }\n\n    static getAvatar(accountName) {\n        return Session.get().then((session) => {\n            return axios({\n                method: 'GET',\n                url: 'https://api.imgur.com/3/account/' + accountName + '/avatar',\n                headers: {\n                    'Authorization': 'Bearer ' + JSON.parse(session).access_token\n                }\n            }).then((response) => {\n                return response.data.data.avatar;\n            }).catch((error) => {\n                console.log('error : ' + error);\n            });\n        });\n    }\n\n    // TODO up/down vote\n}\n",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/ImgurApi.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "ImgurApi",
+    "memberof": "app/ImgurApi.js",
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/ImgurApi.js",
+    "importStyle": "ImgurApi",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "getFeed",
+    "memberof": "app/ImgurApi.js~ImgurApi",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi.getFeed",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "feedName",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "upload",
+    "memberof": "app/ImgurApi.js~ImgurApi",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi.upload",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "imgBytes",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "method",
+    "name": "addToFavorite",
+    "memberof": "app/ImgurApi.js~ImgurApi",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi.addToFavorite",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "imgId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "getFavoritesOnPage",
+    "memberof": "app/ImgurApi.js~ImgurApi",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi.getFavoritesOnPage",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "page",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "getAvatar",
+    "memberof": "app/ImgurApi.js~ImgurApi",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/ImgurApi.js~ImgurApi.getAvatar",
+    "access": "public",
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true,
+    "params": [
+      {
+        "name": "accountName",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "app/ImgurFeed.js",
+    "content": "import React, {Component} from 'react';\nimport {Text, View, FlatList, TextInput, StyleSheet} from 'react-native';\nimport ImgurApi from './ImgurApi';\nimport ImgurPost from './ImgurPost';\nimport wording from './utils/wording'\n\nexport default class ImgurFeed extends Component {\n    constructor(props) {\n        super(props);\n        this.state = {\n            jsonPosts: [],\n            loading: false,\n            images: [],\n            text: [],\n            feedName: '',\n        };\n    }\n\n    render() {\n        return (\n            <View style={{justifyContent: 'space-between'}}>\n                {/*<View style={{flex: 1, width: 500, height: 500, backgroundColor: 'blue'}}>*/}\n                <TextInput\n                    style={styles.FeedSearchBar}\n                    placeholder={wording.feedPlaceHolder}\n                    onSubmitEditing={(t) => this.setState({feedName: t.nativeEvent.text, loading: true})}\n                />\n                {this.state.text}\n                {this.state.images}\n            </View>\n        );\n    }\n\n    componentDidUpdate(prevProps, prevState, snapshot) {\n        if (prevState.feedName !== this.state.feedName) {\n            ImgurApi.getFeed(this.state.feedName).then((response) => {\n                this.setState({\n                    jsonPosts: response.data.items,\n                    loading: false,\n                });\n            }, (error) => {\n                console.log(error);\n            });\n        }\n        if (prevState.loading !== this.state.loading)\n            this.updateImages();\n    }\n\n    updateImages() {\n        if (this.state.loading) {\n            this.setState({\n                text: <Text>{wording.loadingImages}</Text>\n            });\n        } else {\n            this.setState({\n                text: <Text>{wording.imagesLoaded}</Text>\n            });\n            this.setState({\n                images:\n                    <FlatList\n                        style={styles.FeedStyle}\n                        data={this.state.jsonPosts}\n                        initialNumToRender={4}\n                        windowSize={5}\n                        renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}\n                    />\n            });\n            this.setState({loading: false});\n        }\n    }\n};\n\nconst styles = StyleSheet.create({\n    FeedStyle: {\n        backgroundColor: '#003247',\n    },\n    FeedSearchBar: {\n        backgroundColor: '#FFFFB8',\n    },\n});",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/ImgurFeed.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "class",
+    "name": "ImgurFeed",
+    "memberof": "app/ImgurFeed.js",
+    "static": true,
+    "longname": "app/ImgurFeed.js~ImgurFeed",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/ImgurFeed.js",
+    "importStyle": "ImgurFeed",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 57,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/ImgurFeed.js~ImgurFeed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurFeed.js~ImgurFeed#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "state",
+    "memberof": "app/ImgurFeed.js~ImgurFeed",
+    "static": false,
+    "longname": "app/ImgurFeed.js~ImgurFeed#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"jsonPosts\": *, \"loading\": *, \"images\": *, \"text\": *, \"feedName\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "render",
+    "memberof": "app/ImgurFeed.js~ImgurFeed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurFeed.js~ImgurFeed#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "componentDidUpdate",
+    "memberof": "app/ImgurFeed.js~ImgurFeed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurFeed.js~ImgurFeed#componentDidUpdate",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "prevProps",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "prevState",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "snapshot",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "updateImages",
+    "memberof": "app/ImgurFeed.js~ImgurFeed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurFeed.js~ImgurFeed#updateImages",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "app/ImgurFeed.js",
+    "static": true,
+    "longname": "app/ImgurFeed.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "epicture/app/ImgurFeed.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "app/ImgurPost.js",
+    "content": "import React, {PureComponent} from 'react'\nimport {Image, Text, View, StyleSheet} from 'react-native'\nimport ImgurApi from './ImgurApi'\n\nexport default class ImgurPost extends PureComponent {\n    constructor(props) {\n        super(props);\n        this.imgRegex = /.*\\.(jpeg|png|jpg)$/;\n        this.state = {\n            avatar_url: 'not_defined',\n        };\n    }\n\n    componentDidMount() {\n        ImgurApi.getAvatar(this.props.jsonData.account_url).then((avatar) => {\n            this.setState({avatar_url: avatar});\n        });\n    }\n\n    displayImageIfExist() {\n        if (this.props.jsonData.images !== undefined && this.imgRegex.test(this.props.jsonData.images[0].link)) {\n            return (\n                <Image\n                    style={styles.PostImage}\n                    source={{uri: this.props.jsonData.images[0].link}}\n                />\n            );\n        }\n        return null;\n    }\n\n    render() {\n        return (\n            <View style={styles.PostBox}>\n                <View style={{flex: 1, flexDirection: 'row'}}>\n                    <Image\n                        style={styles.avatarIcon}\n                        source={{uri: this.state.avatar_url}}\n                    />\n                    <View style={{flex: 4, flexDirection: 'column'}}>\n                        <Text style={{color: '#FFF'}}> {this.props.jsonData.account_url} </Text>\n                        <Text style={styles.PostTitle}> {this.props.jsonData.title} </Text>\n                    </View>\n                </View>\n                {this.displayImageIfExist()}\n            </View>\n        );\n    }\n}\n\nconst styles = StyleSheet.create({\n        PostBox: {\n            borderColor: '#000000',\n            borderStyle: 'solid',\n            borderWidth: 1,\n            padding: 20,\n        },\n        PostImage: {\n            paddingTop: 10,\n            width: 370,\n            height: 370,\n        },\n        PostTitle: {\n            fontSize: 24,\n            color: '#FFF',\n            padding: 10,\n        },\n        avatarIcon: {\n            paddingTop: 25,\n            width: 50,\n            height: 50,\n            justifyContent: 'center',\n            alignItems: 'center'\n        },\n    })\n;",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/ImgurPost.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "class",
+    "name": "ImgurPost",
+    "memberof": "app/ImgurPost.js",
+    "static": true,
+    "longname": "app/ImgurPost.js~ImgurPost",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/ImgurPost.js",
+    "importStyle": "ImgurPost",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~PureComponent"
+    ]
+  },
+  {
+    "__docId__": 65,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "imgRegex",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#imgRegex",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "state",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"avatar_url\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "componentDidMount",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#componentDidMount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "displayImageIfExist",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#displayImageIfExist",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "render",
+    "memberof": "app/ImgurPost.js~ImgurPost",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/ImgurPost.js~ImgurPost#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "app/ImgurPost.js",
+    "static": true,
+    "longname": "app/ImgurPost.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "epicture/app/ImgurPost.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "app/Login.js",
+    "content": "import React, {Component} from 'react'\nimport {WebView} from 'react-native-webview';\nimport Session from './Session'\nimport {Actions} from 'react-native-router-flux';\n\nexport default class Login extends Component {\n    constructor(props) {\n        super(props);\n        this.state = {url: '', isLoaded: false};\n    }\n\n    render() {\n        return (\n            <WebView\n                source={{uri: 'https://api.imgur.com/oauth2/authorize?client_id=a34ccf491aadd2c&response_type=token&state=callback'}}\n                onNavigationStateChange={(navEvent) => {\n                    this.setState({url: navEvent.url});\n                }}\n            />\n        )\n    }\n\n    async componentDidUpdate(prevProps, prevState, snapshot) {\n        if (prevState.url !== this.state.url)\n            await this.checkConnection();\n    }\n\n    async checkConnection() {\n        const params = this.parseUrl(this.state.url);\n        try {\n            await Session.store(JSON.stringify(params));\n        } catch (e) {\n            console.log(e);\n        }\n        if ('access_token' in params && !this.state.isLoaded) {\n            this.setState({isLoaded: true});\n            Actions.replace('tabs');\n        }\n    }\n\n    parseUrl(url) {\n        const regex = /[?&#]([^=#]+)=([^&#]*)/g;\n        let params = {};\n        let match = regex.exec(url);\n        while (match) {\n            params[match[1]] = match[2];\n            match = regex.exec(url);\n        }\n        return params;\n    }\n}\n",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/Login.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "class",
+    "name": "Login",
+    "memberof": "app/Login.js",
+    "static": true,
+    "longname": "app/Login.js~Login",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/Login.js",
+    "importStyle": "Login",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/Login.js~Login",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Login.js~Login#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "name": "state",
+    "memberof": "app/Login.js~Login",
+    "static": false,
+    "longname": "app/Login.js~Login#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"url\": *, \"isLoaded\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "render",
+    "memberof": "app/Login.js~Login",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Login.js~Login#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "componentDidUpdate",
+    "memberof": "app/Login.js~Login",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/Login.js~Login#componentDidUpdate",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "prevProps",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "prevState",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "snapshot",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "checkConnection",
+    "memberof": "app/Login.js~Login",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/Login.js~Login#checkConnection",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "parseUrl",
+    "memberof": "app/Login.js~Login",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Login.js~Login#parseUrl",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "app/Session.js",
+    "content": "import AsyncStorage from '@react-native-community/async-storage';\n\nexport default class Session {\n    static async store(sessionData) {\n        try {\n            await AsyncStorage.setItem('session', sessionData);\n        } catch (e) {\n            console.log(e);\n        }\n    }\n\n    static async get() {\n        try {\n            return await AsyncStorage.getItem('session');\n        } catch (e) {\n            console.log(e);\n        }\n    }\n}\n",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/Session.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "class",
+    "name": "Session",
+    "memberof": "app/Session.js",
+    "static": true,
+    "longname": "app/Session.js~Session",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/Session.js",
+    "importStyle": "Session",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "store",
+    "memberof": "app/Session.js~Session",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "app/Session.js~Session.store",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "sessionData",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "get",
+    "memberof": "app/Session.js~Session",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "app/Session.js~Session.get",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "app/TabBar.js",
+    "content": "import React from 'react';\nimport {Image, View, TouchableOpacity} from 'react-native';\nimport {Actions} from 'react-native-router-flux';\n\nexport default class CustomTabBar extends React.Component {\n\n    keyToImgSrc(key) {\n      if (key === 'home') {\n        return (require('../img/home.png'))\n      } else if (key === 'feed') {\n        return (require('../img/search.png'))\n      } else if (key === 'upload') {\n        return (require('../img/upload.png'))\n      } else if (key === 'profile') {\n        return (require('../img/profile.png'))\n      } else if (key === 'fav') {\n        return (require('../img/fav.png'))\n      }\n    }\n\n    render() {\n        const {state} = this.props.navigation;\n        const activeTabIndex = state.index;\n\n        return (\n            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>\n                {\n                    state.routes.map(element => (\n                        <TouchableOpacity key={element.key} onPress={() => Actions[element.key]()}>\n                            <Image\n                                source={this.keyToImgSrc(element.key)}\n                                style={{width: 50, height: 50}}\n                            />\n                            {/*<Text style={{color: 'red'}}> {element.key.toUpperCase()} </Text>*/}\n                        </TouchableOpacity>\n                    ))\n                }\n            </View>\n        );\n    }\n}",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/TabBar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "class",
+    "name": "CustomTabBar",
+    "memberof": "app/TabBar.js",
+    "static": true,
+    "longname": "app/TabBar.js~CustomTabBar",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/TabBar.js",
+    "importStyle": "CustomTabBar",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "keyToImgSrc",
+    "memberof": "app/TabBar.js~CustomTabBar",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/TabBar.js~CustomTabBar#keyToImgSrc",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "method",
+    "name": "render",
+    "memberof": "app/TabBar.js~CustomTabBar",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/TabBar.js~CustomTabBar#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "app/Upload.js",
+    "content": "import React, {Component} from 'react'\nimport {View, Button, Image, Text} from 'react-native'\nimport ImagePicker from 'react-native-image-picker'\nimport ImgurApi from \"./ImgurApi\";\nimport wording from './utils/wording'\n\nexport default class Upload extends Component {\n    constructor(props) {\n        super(props);\n        this.state = {\n            img: null,\n            uploadingMessage: ''\n        };\n    }\n\n    render() {\n        return (\n            <View>\n                <Button\n                    title={wording.takePhotoTitle}\n                    onPress={() => this.takePhoto()}\n                />\n                <Button\n                    title={wording.choosePhotoTitle}\n                    onPress={() => this.choosePhotoFromGallery()}\n                />\n                {this.displayPhoto()}\n                <Button\n                    title={wording.uploadTitle}\n                    testID={wording.uploadTitle}\n                    onPress={() => this.uploadPhoto()}\n                />\n                {this.notifyPhotoIsUploading()}\n            </View>\n        )\n    }\n\n    choosePhotoFromGallery() {\n        ImagePicker.launchImageLibrary({}, (response) => {\n            this.setState({\n                img: response,\n                uploadingMessage: ''\n            });\n        });\n    }\n\n    takePhoto() {\n        ImagePicker.launchCamera({}, (response) => {\n            this.setState({\n                img: response,\n                uploadingMessage: ''\n            });\n        });\n    }\n\n    displayPhoto() {\n        if (this.state.img)\n            return <Image style={{width: 300, height: 300}} source={{uri: this.state.img.uri}}\n                          testID={wording.imgToUploadId}/>;\n        return [];\n    }\n\n    uploadPhoto() {\n        if (this.state.uploadingMessage !== wording.uploadingPhoto) {\n            if (this.state.img) {\n                ImgurApi.upload(this.state.img.data).then((response) => {\n                    this.setState({\n                        img: null,\n                        uploadingMessage: ''\n                    });\n                });\n                this.setState({uploadingMessage: wording.uploadingPhoto});\n            } else {\n                this.setState({uploadingMessage: wording.needPhotoToUpload});\n            }\n        }\n    }\n\n    notifyPhotoIsUploading() {\n        if (this.state.uploadingMessage)\n            return <Text>{this.state.uploadingMessage}</Text>;\n        return []\n    }\n}",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/Upload.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "class",
+    "name": "Upload",
+    "memberof": "app/Upload.js",
+    "static": true,
+    "longname": "app/Upload.js~Upload",
+    "access": "public",
+    "export": true,
+    "importPath": "epicture/app/Upload.js",
+    "importStyle": "Upload",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 90,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "state",
+    "memberof": "app/Upload.js~Upload",
+    "static": false,
+    "longname": "app/Upload.js~Upload#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"img\": *, \"uploadingMessage\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "render",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "choosePhotoFromGallery",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#choosePhotoFromGallery",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "takePhoto",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#takePhoto",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "displayPhoto",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#displayPhoto",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "uploadPhoto",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#uploadPhoto",
+    "access": "public",
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "notifyPhotoIsUploading",
+    "memberof": "app/Upload.js~Upload",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/Upload.js~Upload#notifyPhotoIsUploading",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "file",
+    "name": "app/utils/wording.js",
+    "content": "module.exports = {\n    feedPlaceHolder: \"Look for a feed\",\n    loadingImages: \"Loading images...\",\n    imagesLoaded: \"Images are loaded !\",\n    uploadingPhoto: \"Uploading your photo...\",\n    takePhotoTitle: \"Take a photo\",\n    choosePhotoTitle: \"Choose a photo\",\n    uploadTitle: \"Upload\",\n    imgToUploadId: \"imgToUpload\",\n    needPhotoToUpload: \"Choose a photo before uploading\",\n};\n",
+    "static": true,
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/app/utils/wording.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "# Epicture in react-native\n\n## Install\n- Follow this doc https://facebook.github.io/react-native/docs/getting-started to install\n   - node.js\n   - react-native\n   - android-studio\n   - the android emulator\n- In addition add \"ANDROID_SDK_ROOT=$HOME/Android/Sdk\" permanently to your env\n- At the root of the project exec the following command (replace $USER by your username):\n\n\n    echo 'sdk.dir = /home/$USER/Android/Sdk' > ./android/local.properties\n\n- Install adb\n- Logout\n- Install yarn\n- Install yarn dependencies:\n\n    \n    yarn install\n\n- Start your emulator\n- Start the app with:\n\n\n    react-native start & ; react-native run-android\n\n- Enjoy the app\n\n## Install on your android phone\n- Make sure you did ALL the steps in the Install(above) section\n- Enable debug mode on your phone\n- Connect your phone to your computer\n- Create the .aab (It can take some time):\n\n\n    cd android && ./gradlew BundleRelease && cd ..\n\n- Install the app on your phone:\n\n\n    react-native run-android --variant=release\n\n- Enjoy the app\n\n## Dependencies installed\n- react-native-image-picker\n- react-native-dotenv\n- react-native-router-flux\n- react-native-webview\n- @react-native-community/async-storage\n\n",
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"epicture\",\n  \"version\": \"0.0.1\",\n  \"private\": true,\n  \"scripts\": {\n    \"android\": \"react-native run-android\",\n    \"ios\": \"react-native run-ios\",\n    \"start\": \"react-native start\",\n    \"test\": \"jest\",\n    \"lint\": \"eslint .\"\n  },\n  \"dependencies\": {\n    \"@react-native-community/async-storage\": \"^1.6.2\",\n    \"axios\": \"^0.19.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"fetch-mock\": \"^7.5.1\",\n    \"image-picker\": \"^0.3.1\",\n    \"madge\": \"^3.4.4\",\n    \"mock-async-storage\": \"^2.2.0\",\n    \"react\": \"16.9.0\",\n    \"react-native\": \"0.61.1\",\n    \"react-native-dotenv\": \"^0.2.0\",\n    \"react-native-image-picker\": \"0.28.0\",\n    \"react-native-really-awesome-button\": \"^1.4.2\",\n    \"react-native-router-flux\": \"^4.0.6\",\n    \"react-native-testing-library\": \"^1.11.1\",\n    \"react-native-webview\": \"^7.4.2\",\n    \"webview\": \"^0.0.1\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.6.2\",\n    \"@babel/runtime\": \"7.6.2\",\n    \"@react-native-community/eslint-config\": \"0.0.3\",\n    \"babel-jest\": \"24.9.0\",\n    \"eslint\": \"6.5.1\",\n    \"jest\": \"24.9.0\",\n    \"metro-react-native-babel-preset\": \"0.51.1\",\n    \"react-test-renderer\": \"16.9.0\"\n  },\n  \"jest\": {\n    \"preset\": \"react-native\",\n    \"setupFiles\": [\n      \"./jestSetup.js\"\n    ],\n    \"transformIgnorePatterns\": [\n      \"/node_modules/@react-native-community/async-storage/(?!(lib))\"\n    ],\n    \"verbose\": true\n  }\n}\n",
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualAsset",
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/manual/asset",
+    "name": "./manual/asset",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/arthur/epitech/DEV/DEV_epicture_2019/manual/import-diagram.md",
+    "name": "./manual/import-diagram.md",
+    "content": "# Diagram of imports\n![Diagram of imports](asset/graph.svg)\n",
+    "static": true,
+    "access": "public"
+  }
+]
