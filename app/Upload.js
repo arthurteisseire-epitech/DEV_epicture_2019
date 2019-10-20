@@ -7,7 +7,6 @@ import wording from './utils/wording'
 export default class Upload extends Component {
     constructor(props) {
         super(props);
-        this.api = new ImgurApi;
         this.state = {
             img: null,
             uploadingMessage: ''
@@ -63,7 +62,7 @@ export default class Upload extends Component {
     uploadPhoto() {
         if (this.state.uploadingMessage !== wording.uploadingPhoto) {
             if (this.state.img) {
-                this.api.upload(this.state.img.data).then((response) => {
+                ImgurApi.upload(this.state.img.data).then((response) => {
                     this.setState({
                         img: null,
                         uploadingMessage: ''

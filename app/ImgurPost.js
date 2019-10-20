@@ -5,7 +5,6 @@ import ImgurApi from './ImgurApi'
 export default class ImgurPost extends PureComponent {
     constructor(props) {
         super(props);
-        this.api = new ImgurApi;
         this.imgRegex = /.*\.(jpeg|png|jpg)$/;
         this.state = {
             avatar_url: 'not_defined',
@@ -13,7 +12,7 @@ export default class ImgurPost extends PureComponent {
     }
 
     componentDidMount() {
-        this.api.getAvatar(this.props.jsonData.account_url).then((avatar) => {
+        ImgurApi.getAvatar(this.props.jsonData.account_url).then((avatar) => {
             this.setState({avatar_url: avatar});
         });
     }

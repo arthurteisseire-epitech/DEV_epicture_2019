@@ -7,7 +7,6 @@ import wording from './utils/wording'
 export default class ImgurFeed extends Component {
     constructor(props) {
         super(props);
-        this.api = new ImgurApi;
         this.state = {
             jsonPosts: [],
             loading: false,
@@ -36,7 +35,7 @@ export default class ImgurFeed extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevState.feedName !== this.state.feedName) {
-            this.api.getFeed(this.state.feedName).then((response) => {
+            ImgurApi.getFeed(this.state.feedName).then((response) => {
                 this.setState({
                     jsonPosts: response.data.items,
                     loading: false,
