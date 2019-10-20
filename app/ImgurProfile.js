@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import Session from './Session';
 import ImgurApi from './ImgurApi';
-import wording from './utils/wording';
-import FavPost from './FavPost';
 import ProfilePics from './ProfilePics';
 
 export default class ImgurProfile extends Component {
@@ -35,11 +33,11 @@ export default class ImgurProfile extends Component {
   updateImages() {
     if (this.state.loading) {
       this.setState({
-        text: <Text>{wording.loadingImages}</Text>,
+        text: <Text>Loading images...</Text>,
       });
     } else {
       this.setState({
-        text: <Text>{wording.imagesLoaded}</Text>,
+        text: <Text>Images are loaded !</Text>,
       });
       this.setState({
         images:
