@@ -51,9 +51,15 @@ To open full documentation in your browser open ./docs/index.html with your brow
 - Enjoy the app
 
 ## Dependencies installed
+### Application
 - react-native-image-picker
 - react-native-dotenv
 - react-native-router-flux
 - react-native-webview
 - @react-native-community/async-storage
 
+### Documentation
+- esdoc
+- esdoc-jsx-plugin
+- esdoc-standard-plugin
+- madge

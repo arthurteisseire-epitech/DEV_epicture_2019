@@ -12,6 +12,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "epicture/app/imgurfav.js~imgurfav",
+    "class/app/ImgurFav.js~ImgurFav.html",
+    "<span>ImgurFav</span> <span class=\"search-result-import-path\">epicture/app/ImgurFav.js</span>",
+    "class"
+  ],
+  [
     "epicture/app/imgurfeed.js~imgurfeed",
     "class/app/ImgurFeed.js~ImgurFeed.html",
     "<span>ImgurFeed</span> <span class=\"search-result-import-path\">epicture/app/ImgurFeed.js</span>",
@@ -21,6 +27,12 @@ window.esdocSearchIndex = [
     "epicture/app/imgurpost.js~imgurpost",
     "class/app/ImgurPost.js~ImgurPost.html",
     "<span>ImgurPost</span> <span class=\"search-result-import-path\">epicture/app/ImgurPost.js</span>",
+    "class"
+  ],
+  [
+    "epicture/app/imgurprofile.js~imgurprofile",
+    "class/app/ImgurProfile.js~ImgurProfile.html",
+    "<span>ImgurProfile</span> <span class=\"search-result-import-path\">epicture/app/ImgurProfile.js</span>",
     "class"
   ],
   [
@@ -360,6 +372,36 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "app/imgurfav.js",
+    "file/app/ImgurFav.js.html",
+    "app/ImgurFav.js",
+    "file"
+  ],
+  [
+    "app/imgurfav.js~imgurfav#componentdidmount",
+    "class/app/ImgurFav.js~ImgurFav.html#instance-method-componentDidMount",
+    "app/ImgurFav.js~ImgurFav#componentDidMount",
+    "method"
+  ],
+  [
+    "app/imgurfav.js~imgurfav#constructor",
+    "class/app/ImgurFav.js~ImgurFav.html#instance-constructor-constructor",
+    "app/ImgurFav.js~ImgurFav#constructor",
+    "method"
+  ],
+  [
+    "app/imgurfav.js~imgurfav#render",
+    "class/app/ImgurFav.js~ImgurFav.html#instance-method-render",
+    "app/ImgurFav.js~ImgurFav#render",
+    "method"
+  ],
+  [
+    "app/imgurfav.js~imgurfav#state",
+    "class/app/ImgurFav.js~ImgurFav.html#instance-member-state",
+    "app/ImgurFav.js~ImgurFav#state",
+    "member"
+  ],
+  [
     "app/imgurfeed.js",
     "file/app/ImgurFeed.js.html",
     "app/ImgurFeed.js",
@@ -435,6 +477,36 @@ window.esdocSearchIndex = [
     "app/imgurpost.js~imgurpost#state",
     "class/app/ImgurPost.js~ImgurPost.html#instance-member-state",
     "app/ImgurPost.js~ImgurPost#state",
+    "member"
+  ],
+  [
+    "app/imgurprofile.js",
+    "file/app/ImgurProfile.js.html",
+    "app/ImgurProfile.js",
+    "file"
+  ],
+  [
+    "app/imgurprofile.js~imgurprofile#componentdidmount",
+    "class/app/ImgurProfile.js~ImgurProfile.html#instance-method-componentDidMount",
+    "app/ImgurProfile.js~ImgurProfile#componentDidMount",
+    "method"
+  ],
+  [
+    "app/imgurprofile.js~imgurprofile#constructor",
+    "class/app/ImgurProfile.js~ImgurProfile.html#instance-constructor-constructor",
+    "app/ImgurProfile.js~ImgurProfile#constructor",
+    "method"
+  ],
+  [
+    "app/imgurprofile.js~imgurprofile#render",
+    "class/app/ImgurProfile.js~ImgurProfile.html#instance-method-render",
+    "app/ImgurProfile.js~ImgurProfile#render",
+    "method"
+  ],
+  [
+    "app/imgurprofile.js~imgurprofile#state",
+    "class/app/ImgurProfile.js~ImgurProfile.html#instance-member-state",
+    "app/ImgurProfile.js~ImgurProfile#state",
     "member"
   ],
   [

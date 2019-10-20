@@ -16,7 +16,7 @@ export default class ImgurFav extends Component {
     };
   }
 
-  componentDidMount(): void {
+  componentDidMount() {
     ImgurApi.getFavoritesOnPage(this.state.page_id).then((response) => {
       console.log("heyyy");
       console.log(response.data);
