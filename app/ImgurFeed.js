@@ -25,8 +25,8 @@ export default class ImgurFeed extends Component {
                     placeholder={wording.feedPlaceHolder}
                     onSubmitEditing={(t) => this.setState({feedName: t.nativeEvent.text, loading: true})}
                 />
-                {this.state.text}
                 {this.state.images}
+                {this.state.text}
                 {/*</View>*/}
                 {/*<NavBar/>*/}
             </View>
