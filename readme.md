@@ -12,6 +12,7 @@
 
     echo 'sdk.dir = /home/$USER/Android/Sdk' > ./android/local.properties
 
+- Install adb
 - Logout
 - Install yarn
 - Install yarn dependencies:
