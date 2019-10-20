@@ -62,7 +62,10 @@ export default class ImgurFeed extends Component {
                         data={this.state.jsonPosts}
                         initialNumToRender={4}
                         windowSize={5}
-                        renderItem={(jsonPost) => <ImgurPost jsonData={jsonPost.item}/>}
+                        renderItem={(jsonPost) => <ImgurPost
+                          jsonData={jsonPost.item}
+                          isInFavFeed={false}
+                        />}
                     />
             });
             this.setState({loading: false});

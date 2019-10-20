@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Image, Text, View, StyleSheet} from 'react-native';
+import {Image, Text, View, StyleSheet, Button} from 'react-native';
 import ImgurApi from './ImgurApi';
 
 export default class ImgurPost extends PureComponent {
@@ -25,23 +25,16 @@ export default class ImgurPost extends PureComponent {
           source={{uri: this.props.jsonData.images[0].link}}
         />
       );
-    } else if (this.props.jsonData.item.link !== undefined && this.imgRegex.test(this.props.jsonData.item.link)) {
-      return (
-        <Image
-          style={styles.PostImage}
-          source={{uri: this.props.jsonData.item.link}}
-        />
-      );
-    } else {
-      return (
-        <Image
-          style={styles.PostImage}
-          source={require('../img/apicaca.png')}
-        />
-      );
     }
     return null;
   }
+
+  addFav = () => {
+    console.log(this.props.jsonData.images[0].link);
+    ImgurApi.addToFavorite(this.props.jsonData.images[0].id).then(() => {
+      alert('added to fav')
+    });
+  };
 
   render() {
     return (
@@ -57,6 +50,10 @@ export default class ImgurPost extends PureComponent {
           </View>
         </View>
         {this.displayImageIfExist()}
+        <Button
+          title={'Add to fav'}
+          onPress={this.addFav}
+        />
       </View>
     );
   }

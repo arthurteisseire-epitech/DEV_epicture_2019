@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Text, View, FlatList, Button, StyleSheet} from 'react-native';
 import ImgurApi from './ImgurApi';
-import ImgurPost from './ImgurPost';
 import wording from './utils/wording';
+import FavPost from './FavPost';
 
 export default class ImgurFav extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ export default class ImgurFav extends Component {
             data={this.state.jsonFavs}
             initialNumToRender={4}
             windowSize={5}
-            renderItem={(jsonFav) => <ImgurPost jsonData={jsonFav}/>}
+            renderItem={(jsonFav) => <FavPost jsonData={jsonFav}/>}
             // renderItem={(jsonFav) => console.log(jsonFav)}
           />,
       });
