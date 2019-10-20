@@ -6,6 +6,7 @@ import ImgurFeed from "./app/ImgurFeed";
 import Upload from "./app/Upload";
 import TabBar from './app/TabBar';
 import ImgurFav from './app/ImgurFav';
+import ImgurProfile from './app/ImgurProfile';
 /*import NavBar from "app/NavBar"*/
 
 export default class App extends Component {
@@ -41,6 +42,12 @@ export default class App extends Component {
                               key="fav"
                               title="Fav"
                               component={ImgurFav}
+                              hideNavBar
+                            />
+                            <Scene
+                              key="profile"
+                              title="Profile"
+                              component={ImgurProfile}
                               hideNavBar
                             />
                         </Tabs>
