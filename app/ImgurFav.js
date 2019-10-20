@@ -45,7 +45,6 @@ export default class ImgurFav extends Component {
             initialNumToRender={4}
             windowSize={5}
             renderItem={(jsonFav) => <FavPost jsonData={jsonFav}/>}
-            // renderItem={(jsonFav) => console.log(jsonFav)}
           />,
       });
       this.setState({loading: false});

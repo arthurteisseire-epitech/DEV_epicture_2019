@@ -67,6 +67,18 @@ export default class ImgurApi {
         });
     }
 
+    static getAccountPics() {
+        return axios.get('https://api.imgur.com/3/account/me/images', {
+            headers: {
+                'Authorization': 'Client-ID ' + CLIENT_ID
+            }
+        }).then((response) => {
+            return response.data;
+        }).catch((error) => {
+            console.log('error : ' + error);
+        });
+    }
+
     static getAvatar(accountName) {
         return Session.get().then((session) => {
             return axios({
