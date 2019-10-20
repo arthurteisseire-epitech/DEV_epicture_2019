@@ -12,15 +12,15 @@ export default class ImgurProfile extends Component {
 
     componentDidMount() {
         Session.get().then((session) => {
-            console.log("session: " + JSON.parse(session).account_name);
-            this.setState({account_name: JSON.parse(session).account_name})
+            console.log("session: " + JSON.parse(session).account_username);
+            this.setState({account_name: JSON.parse(session).account_username})
         });
     }
 
   render() {
     return (
       <View>
-        <Text> Logged as {this.state.account_name} </Text>
+        <Text style={{textAlign: 'center', padding: 10, fontSize: 24}}> {this.state.account_name}'s pictures : </Text>
       </View>
     )
   }
