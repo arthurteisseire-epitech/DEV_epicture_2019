@@ -32,6 +32,13 @@ export default class ImgurPost extends PureComponent {
           source={{uri: this.props.jsonData.item.link}}
         />
       );
+    } else {
+      return (
+        <Image
+          style={styles.PostImage}
+          source={require('../img/apicaca.png')}
+        />
+      );
     }
     return null;
   }
